@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             n1 = Double.parseDouble(s1);
             n2 = Double.parseDouble(s2);
         } catch (NumberFormatException e) {
-            tv1.setText("Invalid input");
+            tv1.setText("wrong input");
             return true;
         }
 
@@ -78,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (st.equals("/")) {
 
             if (n2 == 0) {
-                tv1.setText("Cant divide in 0");
+                tv1.setText("cant divide in 0");
                 return true;
             }
 
